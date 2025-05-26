@@ -1,0 +1,293 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+nav ul li {
+  margin: 0 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #007acc;
+}
+
+.hero h1 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.btn {
+  display: inline-block;
+  padding: .75rem 1.5rem;
+  background: #fff;
+  color: #007acc;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn:hover {
+  background: #e6e6e6;
+}
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+#about-me ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+.icon-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.icon-links img {
+  width: 32px;
+  height: auto;
+}
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;               /* space between items */
+  justify-items: center;   /* center each image in its cell */
+  align-items: center;
+  margin-bottom: 1rem;     /* optional spacing under each row */
+}
+.icons img {
+  width: 80px;             /* adjust as needed */
+  height: 80px;            /* keep square, or use auto for proportional */
+  object-fit: contain;     /* preserve aspect ratio */
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: .875rem;
+  color: #666;
+}
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.25rem;
+}
+a,
+a:visited {
+  color: #333;        /* or put your hex here, e.g. #333 */
+  text-decoration:none;
+}
+
+a:hover,
+a:active {
+  text-decoration:wavy;
+}
+/* ---------- Publications ---------- */
+.publications {
+  margin: 4rem 0;
+}
+
+.publications h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.25rem;
+}
+
+/* container for each pub */
+.pub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* single pub entry */
+.pub-item {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+/* thumbnail */
+.pub-item img {
+  width: 160px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* details pane */
+.pub-details {
+  flex: 1;
+}
+
+/* title + NEW tag */
+.pub-details h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.pub-details h3 .tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.pub-details h3 .tag.new {
+  background-color: #3366cc;
+  color: white;
+}
+
+.pub-details h3 a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.pub-details h3 a:hover {
+  text-decoration: underline;
+}
+
+/* authors, venue, links */
+.pub-details .authors,
+.pub-details .venue,
+.pub-details .links {
+  margin: 0.4em 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.pub-details .venue em {
+  font-style: italic;
+}
+
+.pub-details .highlight {
+  color: #d23669;
+  font-weight: 500;
+}
+
+.pub-details .links a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+.pub-details .links a:hover {
+  text-decoration: underline;
+}
+/* Hero: side-by-side text + image */
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  /* allows wrap on very small screens */
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 300px; /* grow, shrink, base width */
+}
+
+.hero-text h1 {
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  margin-top: 0;
+  color: #555;
+}
+
+/* avatar styling */
+.hero-image .avatar {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ensure container still centers content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+h1,
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Make all normal text pure black */
+body {
+  color: #000;
+}
+
+/* Links should be purple and never underlined */
+a,
+a:visited {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: orange;
+  text-decoration: none;
+}
+
+/* Also update your nav hover/active to purple */
+nav ul li a:hover,
+nav ul li a.active {
+  color: orange;
+}
+/* center only the main heading */
+.hero-text h1 {
+  text-align: center;
+  width: 100%;
+}
+/* Make headings non-bold */
+h1,
+h2,
+h3 {
+  font-weight: normal;
+}
