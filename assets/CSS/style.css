@@ -246,6 +246,17 @@ a:active {
   border-radius: 50%;
   object-fit: cover;
 }
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer p {
+  margin: 0;
+}
 
 /* ensure container still centers content */
 .container {
