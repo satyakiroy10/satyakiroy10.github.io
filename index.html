@@ -177,6 +177,28 @@
       </div>
     </section>
   </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Satyaki Roy Chowdhury. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // attach toggle behavior to all .bib-btns
+    document.querySelectorAll('.bib-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const bib = btn.closest('.pub-details').querySelector('.bibtex');
+        const showing = bib.style.display === 'block';
+        bib.style.display = showing ? 'none' : 'block';
+        btn.textContent = showing ? 'BIB' : 'Hide BIB';
+      });
+    });
+
+    // Dynamically set year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
 
 </body>
 </html>
