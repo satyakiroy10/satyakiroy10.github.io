@@ -203,14 +203,21 @@
 </section>
 
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.bib-btn').forEach(btn => {
     btn.addEventListener('click', () => {
-      const bib = btn.closest('.pub-details').querySelector('.bibtex');
-      const showing = bib.style.display === 'block';
+      const details = btn.closest('.pub-details');
+      if (!details) return;
+
+      const bib = details.querySelector('.bibtex');
+      if (!bib) return; // no bib section for this pub
+
+      const showing = getComputedStyle(bib).display !== 'none';
       bib.style.display = showing ? 'none' : 'block';
       btn.textContent = showing ? 'BIB' : 'Hide BIB';
     });
   });
+});
 </script>
 
 
