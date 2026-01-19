@@ -92,7 +92,7 @@
     <div class="pub-item">
       <img
         src="assets/images/isbi2025.png"
-        alt="Hybridization of Attention UNet..."
+        alt="Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation"
       >
       <div class="pub-details">
         <h3>
@@ -104,16 +104,16 @@
             Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation
           </a>
         </h3>
+
         <p class="authors">
           <strong>Satyaki Roy Chowdhury</strong> and Golrokh Mirzaei
         </p>
+
         <p class="venue">
-          2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 2025.
+          2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI 2025).
         </p>
 
         <p class="links">
-          <button class="bib-btn" type="button">BIB</button>
-          |
           <a
             href="https://drive.google.com/file/d/1277cOVXEnt1i-wURJrldQtgMvDCcJXoh/view?usp=sharing"
             target="_blank"
@@ -122,19 +122,6 @@
             PDF
           </a>
         </p>
-
-        <div class="bibtex" style="display: none; margin-top: 1rem;">
-          <pre>
-@INPROCEEDINGS{10980895,
-  author={Chowdhury, Satyaki Roy and Mirzaei, Golrokh},
-  booktitle={2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)},
-  title={Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation},
-  year={2025},
-  pages={1-5},
-  doi={10.1109/ISBI60581.2025.10980895}
-}
-          </pre>
-        </div>
       </div>
     </div>
 
@@ -201,24 +188,6 @@
     </div>
   </div>
 </section>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.bib-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const details = btn.closest('.pub-details');
-      if (!details) return;
-
-      const bib = details.querySelector('.bibtex');
-      if (!bib) return; // no bib section for this pub
-
-      const showing = getComputedStyle(bib).display !== 'none';
-      bib.style.display = showing ? 'none' : 'block';
-      btn.textContent = showing ? 'BIB' : 'Hide BIB';
-    });
-  });
-});
-</script>
 
 
 
