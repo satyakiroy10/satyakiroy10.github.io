@@ -84,151 +84,135 @@
     </section>
 
     <!-- Publications -->
-    <section id="publications" class="publications">
-    <h2>Publications</h2>
+<section id="publications" class="publications">
+  <h2>Publications</h2>
 
-      <div class="pub-list">
-        <!-- single publication -->
-        <div class="pub-item">
-          <img
-            src="assets/images/isbi2025.png"
-            alt="Hybridization of Attention UNet..."
+  <div class="pub-list">
+    <!-- Publication 1 -->
+    <div class="pub-item">
+      <img
+        src="assets/images/isbi2025.png"
+        alt="Hybridization of Attention UNet..."
+      >
+      <div class="pub-details">
+        <h3>
+          <a
+            href="https://ieeexplore.ieee.org/document/10980895"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          <div class="pub-details">
-            <h3>
-              <a
-                href="https://ieeexplore.ieee.org/document/10980895"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation
-              </a>
-            </h3>
-            <p class="authors">
-              <strong>Satyaki Roy Chowdhury</strong> and Golrokh Mirzaei
-            </p>
-            <p class="venue">
-              2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 2025.
-            </p>
+            Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation
+          </a>
+        </h3>
+        <p class="authors">
+          <strong>Satyaki Roy Chowdhury</strong> and Golrokh Mirzaei
+        </p>
+        <p class="venue">
+          2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI) 2025.
+        </p>
 
-            <p class="links">
-              <button class="bib-btn">BIB</button>
-              |
-              <a
-                href="https://drive.google.com/file/d/1277cOVXEnt1i-wURJrldQtgMvDCcJXoh/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                PDF
-              </a>
-            </p>
+        <p class="links">
+          <button class="bib-btn" type="button">BIB</button>
+          |
+          <a
+            href="https://drive.google.com/file/d/1277cOVXEnt1i-wURJrldQtgMvDCcJXoh/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PDF
+          </a>
+        </p>
 
-            <!-- hidden until you click “BIB” -->
-            <div class="bibtex" style="display: none; margin-top: 1rem;">
-              <pre>
-    @INPROCEEDINGS{10980895,
-      author={Chowdhury, Satyaki Roy and Mirzaei, Golrokh},
-      booktitle={2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)},
-      title={Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation},
-      year={2025},
-      volume={},
-      number={},
-      pages={1-5},
-      keywords={Graphical models;Shape;Architecture;Semantic segmentation;Buildings;Brain tumors;Reliability engineering;Convolutional neural networks;Medical diagnostic imaging;Distribution functions;Convolutional Neural Networks;Atrous Spatial Pyramid Pooling;Attention-UNet;Brain tumor},
-      doi={10.1109/ISBI60581.2025.10980895}
-    }
-              </pre>
-            </div>
-          </div>
+        <div class="bibtex" style="display: none; margin-top: 1rem;">
+          <pre>
+@INPROCEEDINGS{10980895,
+  author={Chowdhury, Satyaki Roy and Mirzaei, Golrokh},
+  booktitle={2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI)},
+  title={Hybridization of Attention UNet with Repeated Atrous Spatial Pyramid Pooling for Improved Brain Tumor Segmentation},
+  year={2025},
+  pages={1-5},
+  doi={10.1109/ISBI60581.2025.10980895}
+}
+          </pre>
         </div>
       </div>
-    </section>
+    </div>
 
-    <script>
-    // attach toggle behavior to all .bib-btns
-    document.querySelectorAll('.bib-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const bib = btn.closest('.pub-details').querySelector('.bibtex');
-        const showing = bib.style.display === 'block';
-        bib.style.display = showing ? 'none' : 'block';
-        btn.textContent = showing ? 'BIB' : 'Hide BIB';
-      });
-    });
-    </script>
-    <!-- ACV Publication (no BIB, paper & code coming soon) -->
-<div class="pub-item">
-  <img
-    src="assets/images/wacv_2026.png"
-    alt="WACV 2026"
-  >
-  <div class="pub-details">
-    <h3>
-      <a
-        href="#"
-        onclick="return false;"
-        style="cursor: default;"
+    <!-- Publication 2 (WACV 2026) -->
+    <div class="pub-item">
+      <img
+        src="assets/images/wacv_2026.png"
+        alt="WACV 2026"
       >
-        From Bands to Depth: Understanding Bathymetry Decisions on Sentinel-2
-      </a>
-    </h3>
+      <div class="pub-details">
+        <h3>
+          <a href="#" onclick="return false;" style="cursor: default;">
+            From Bands to Depth: Understanding Bathymetry Decisions on Sentinel-2
+          </a>
+        </h3>
 
-    <p class="authors">
-      <strong>Satyaki Roy Chowdhury</strong>, Aswathnarayan Radhakrishnan, Hari Subramoni
-    </p>
+        <p class="authors">
+          <strong>Satyaki Roy Chowdhury</strong>, Aswathnarayan Radhakrishnan, Hari Subramoni
+        </p>
 
-    <p class="venue">
-      IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026.
-    </p>
+        <p class="venue">
+          IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2026.
+        </p>
 
-    <!-- Coming soon section -->
-    <p class="links">
-      <span style="font-style: italic; text-decoration: underline;">
-        Paper coming soon
-      </span>
-      |
-      <span style="font-style: italic; text-decoration: underline;">
-        Code coming soon
-      </span>
-    </p>
-  </div>
-</div>
-    
-<div class="pub-item">
-    <img
-      src="assets/images/ISBI_2026.png"
-      alt="Variance-Penalized MC-Dropout as a Learned Smoothing Prior for Brain Tumour Segmentation"
-    >
-    <div class="pub-details">
-      <h3>
-        <a
-          href=""
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Variance-Penalized MC-Dropout as a Learned Smoothing Prior for Brain
-          Tumour Segmentation
-        </a>
-      </h3>
+        <p class="links">
+          <span style="font-style: italic; text-decoration: underline;">Paper coming soon</span>
+          |
+          <span style="font-style: italic; text-decoration: underline;">Code coming soon</span>
+        </p>
+      </div>
+    </div>
 
-      <p class="authors">
-        <strong>Satyaki Roy Chowdhury</strong> and Golrokh Mirzaei
-      </p>
+    <!-- Publication 3 (ISBI 2026) -->
+    <div class="pub-item">
+      <img
+        src="assets/images/ISBI_2026.png"
+        alt="Variance-Penalized MC-Dropout as a Learned Smoothing Prior for Brain Tumour Segmentation"
+      >
+      <div class="pub-details">
+        <h3>
+          <a href="#" onclick="return false;" style="cursor: default;">
+            Variance-Penalized MC-Dropout as a Learned Smoothing Prior for Brain Tumour Segmentation
+          </a>
+        </h3>
 
-      <p class="venue">
-        2025 IEEE 23rd International Symposium on Biomedical Imaging (ISBI 2026)
-      </p>
+        <p class="authors">
+          <strong>Satyaki Roy Chowdhury</strong> and Golrokh Mirzaei
+        </p>
 
-      <p class="links">
-        <a
-          href="https://arxiv.org/pdf/2601.08956"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          PDF
-        </a>
-      </p>
+        <p class="venue">
+          2026 IEEE 23rd International Symposium on Biomedical Imaging (ISBI 2026)
+        </p>
+
+        <p class="links">
+          <a
+            href="https://arxiv.org/pdf/2601.08956"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PDF
+          </a>
+        </p>
+      </div>
     </div>
   </div>
+</section>
+
+<script>
+  document.querySelectorAll('.bib-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const bib = btn.closest('.pub-details').querySelector('.bibtex');
+      const showing = bib.style.display === 'block';
+      bib.style.display = showing ? 'none' : 'block';
+      btn.textContent = showing ? 'BIB' : 'Hide BIB';
+    });
+  });
+</script>
+
 
 
     <!-- Familiar With -->
